@@ -9,8 +9,8 @@ app.use(express.static('public'))
 const path = require('path');
 const router = express.Router();
 
-router.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sub_nostylesheets/sub_no1.html'));
+router.get('/02utility', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/02utility.html'));
     //__dirname : It will resolve to your project folder.
     });
 
