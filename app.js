@@ -9,8 +9,13 @@ app.use(express.static('public'))
 const path = require('path');
 const router = express.Router();
 
+//현주
 router.get('/02utility', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/02utility.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+router.get('/03utility', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/03utility.html'));
     //__dirname : It will resolve to your project folder.
     });
 
