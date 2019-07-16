@@ -5,7 +5,7 @@ const port = 3000
 //app.get('/', (req, res) => res.send('Hello World!'))
 
 app.use(express.static('public'))
-//파일간 링크시 루트폴더: public
+//파일 링크시 루트폴더: public
 
 const path = require('path');
 const router = express.Router();
