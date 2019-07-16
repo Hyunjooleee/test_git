@@ -14,6 +14,14 @@ router.get('/02utility', function (req, res) {
     //__dirname : It will resolve to your project folder.
     });
 
+
+// 인식
+router.get('/inchic/02', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/inchic/02.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+
+
 app.use('/', router);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
